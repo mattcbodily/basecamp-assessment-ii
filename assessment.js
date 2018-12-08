@@ -101,7 +101,6 @@ function evensOnly (){
   }
   return evens
 }
-evens();
 
 /**
  * #9
@@ -132,11 +131,10 @@ var trueFriends = peopleIknow.filter (function(val, i, arr){
  */
 
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
-
+var indexes = [];
 function indexFinder (arr) {
-  var indexes = [];
-  for (i=0; i<randomNumbers.length; i++) {
+  for (i=0; i<arr.length; i++) {
     indexes.push(i);
   }
-  return indexes;
 }
+indexFinder (randomNumbers);
